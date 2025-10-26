@@ -1,12 +1,9 @@
----
-title: Artificial Intelligence Algorithms
----
 
 # Artificial Intelligence Algorithms
 
 Welcome to the Artificial Intelligence Algorithms repository! This project showcases implementations of various AI algorithms using Python. Each module is designed to be an educational tool to demonstrate the workings and applications of these algorithms.
 
-## ❓ Introduction
+## 🌱 Introduction
 
 This repository contains Python implementations of fundamental artificial intelligence algorithms such as Perceptron, Simulated Annealing, and WalkSAT. These algorithms are core components in fields such as machine learning and optimization.
 
@@ -32,25 +29,23 @@ README.md
 To get started with this repository:
 
 1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/MartinDuranSantos/Artificial_Intelligence_Algorithms.git
-   ```
+```bash
+git clone https://github.com/MartinDuranSantos/Artificial_Intelligence_Algorithms.git
+```
 
 2. **Install necessary packages**:
 Since this project contains Python scripts, ensure Python is installed on your machine.
 
 Although requirements are not explicitly mentioned, you may use basic libraries like numpy. Install dependencies using:
-
-    ```bash
-    pip install numpy
-    ```
+```bash
+pip install numpy
+```
 
 3. **Run the scripts**:
 Execute any script directly via Python to see the algorithms in action:
-
-    ```bash
+```bash
     python Perceptron.py
-    ```
+```
 
 ## 🤝 Contribution Guidelines
 Contributions are welcome! Please ensure you follow these guidelines:
