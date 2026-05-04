@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RunTrack - Running Analytics Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <div class="header-content">
+        <h1 class="logo">RunTrack</h1>
+        <p class="tagline">Running Analytics</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="summary-cards">
+        <div class="card summary-card">
+          <span class="card-label">Total Distance</span>
+          <span class="card-value" id="total-distance">0</span>
+          <span class="card-unit">km</span>
+        </div>
+        <div class="card summary-card">
+          <span class="card-label">Average Pace</span>
+          <span class="card-value" id="avg-pace">0</span>
+          <span class="card-unit">min/km</span>
+        </div>
+        <div class="card summary-card">
+          <span class="card-label">Total Time</span>
+          <span class="card-value" id="total-time">0</span>
+          <span class="card-unit">hours</span>
+        </div>
+        <div class="card summary-card">
+          <span class="card-label">Avg Heart Rate</span>
+          <span class="card-value" id="avg-heart-rate">0</span>
+          <span class="card-unit">bpm</span>
+        </div>
+        <div class="card summary-card">
+          <span class="card-label">Weekly Progress</span>
+          <span class="card-value" id="weekly-progress">0</span>
+          <span class="card-unit">%</span>
+        </div>
+      </section>
+
+      <section class="charts-section">
+        <div class="card chart-card">
+          <div class="chart-header">
+            <h2 class="chart-title">Distance Trend</h2>
+            <select class="filter-select" id="time-filter">
+              <option value="weekly">Weekly</option>
+              <option value="monthly">Monthly</option>
+              <option value="yearly">Yearly</option>
+            </select>
+          </div>
+          <div class="chart-container" id="weekly-chart"></div>
+        </div>
+        <div class="card chart-card">
+          <h2 class="chart-title">Heart Rate Zones</h2>
+          <div class="chart-container" id="hr-zones-chart"></div>
+        </div>
+      </section>
+
+      <section class="activities-section">
+        <div class="card activities-card">
+          <div class="activities-header">
+            <h2 class="activities-title">Recent Runs</h2>
+            <div class="filter-group">
+              <label class="filter-label">Filter by:</label>
+              <select class="filter-select" id="distance-filter">
+                <option value="all">All Runs</option>
+                <option value="short">Short (&lt; 5km)</option>
+                <option value="medium">Medium (5-10km)</option>
+                <option value="long">Long (&gt; 10km)</option>
+              </select>
+            </div>
+          </div>
+          <div class="activities-list" id="activities-list"></div>
+          <div class="empty-state" id="empty-state" hidden>
+            <p>No runs match the selected filter.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

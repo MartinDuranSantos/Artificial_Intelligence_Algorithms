@@ -1,0 +1,61 @@
+# Running Analytics Dashboard - Project Prompt
+
+## Objective
+Create a polished single-page running analytics dashboard using only HTML, CSS, and vanilla JavaScript.
+
+## Context
+- **Product**: A fake dashboard for runners to track their training data.
+- **Data**: All data should be mocked in JavaScript.
+- **Quality**: The app should feel like a serious fitness analytics tool, not a toy demo.
+- **Location**: Create the project inside the folder named `SportDashboard`.
+
+## Technical Requirements
+
+### Files to Create
+- `index.html` - Main HTML structure
+- `styles.css` - All styling
+- `app.js` - Application logic and mock data
+- `package.json` - Project configuration with dev script
+- `server.js` - Minimal Node.js server (if needed)
+
+### Constraints
+- Use **no external dependencies** and **no build step**
+- Serve locally with `pnpm` using the dev script in package.json
+- Use **only** Node.js built-in modules for the server
+- **Do not use chart libraries** - implement charts using SVG, Canvas, or plain HTML/CSS
+
+## Features & UI Requirements
+
+### Summary Cards
+Display the following metrics as cards:
+- Total distance (km/mi)
+- Average pace (min/km or min/mi)
+- Total training time
+- Average heart rate (bpm)
+- Weekly progress indicator
+
+### Data Visualization
+Create two custom charts:
+1. **Weekly Distance Trend** - Line or bar chart showing distance per day
+2. **Heart Rate Zones** - Distribution chart showing time in each zone
+
+### Activity List
+- Display recent runs with: distance, duration, pace, heart rate, elevation gain, date, and route name
+- Include **simple filters** by distance type (e.g., short, medium, long runs)
+- Make the list **responsive**
+
+### UI/UX Details
+- Modern **dark UI** with strong visual hierarchy
+- Hover states on interactive elements
+- Empty states for filters with no results
+- Subtle animations
+- Clear labels and consistent typography
+
+## Success Criteria
+- Visual quality and product feel are prioritized
+- Code is clean and readable
+- App runs locally with `pnpm run dev`
+- Fully responsive design
+
+## Instructions
+After implementation, provide the command to run the app.

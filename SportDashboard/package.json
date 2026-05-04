@@ -1,0 +1,11 @@
+{
+  "name": "running-analytics-dashboard",
+  "version": "1.0.0",
+  "description": "A polished single-page running analytics dashboard",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
